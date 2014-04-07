@@ -1,0 +1,29 @@
+%h1 Books
+
+%table.table.table-striped.table-hover
+  %tr
+    %th Title
+    %th Author
+    %th Publisher
+    %th Publish date
+    %th Price
+    %th Amazon link
+    %th
+    %th
+    %th
+
+  - @books.each do |book|
+    %tr
+      %td= book.title
+      %td= book.author
+      %td= book.publisher
+      %td= book.publish_date
+      %td= book.price
+      %td= book.amazon_link
+      %td= link_to 'Show', book
+      %td= link_to 'Edit', edit_book_path(book)
+      %td= link_to 'Destroy', book, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Book', new_book_path, class: "btn btn-primary"
