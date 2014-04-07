@@ -6,23 +6,23 @@
         - @book.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
+  .form-group
     = f.label :title
-    = f.text_field :title
-  .field
+    = f.text_field :title, :class => "form-control"
+  .form-group
     = f.label :author
-    = f.text_field :author
-  .field
+    = f.text_field :author, :class => "form-control"
+  .form-group
     = f.label :publisher
-    = f.text_field :publisher
-  .field
+    = f.text_field :publisher, :class => "form-control"
+  .form-group
     = f.label :publish_date
-    = f.date_select :publish_date
-  .field
+    = f.date_select :publish_date, :class => "form-control"
+  .form-group
     = f.label :price
-    = f.text_field :price
-  .field
+    = f.text_field :price, :class => "form-control"
+  .form-group
     = f.label :amazon_link
-    = f.text_field :amazon_link
+    = f.text_field :amazon_link, :class => "form-control"
   .actions
-    = f.submit 'Save'
+    = f.submit 'Save', :class => "btn btn-default"

@@ -1,24 +1,25 @@
 %p#notice= notice
 
-%p
-  %b Title:
-  = @book.title
-%p
-  %b Author:
-  = @book.author
-%p
-  %b Publisher:
-  = @book.publisher
-%p
-  %b Publish date:
-  = @book.publish_date
-%p
-  %b Price:
-  = @book.price
-%p
-  %b Amazon link:
-  = @book.amazon_link
+%ul.list-group
+  %li.list-group-item
+    %b Title:
+    = @book.title
+  %li.list-group-item
+    %b Author:
+    = @book.author
+  %li.list-group-item
+    %b Publisher:
+    = @book.publisher
+  %li.list-group-item
+    %b Publish date:
+    = @book.publish_date
+  %li.list-group-item
+    %b Price:
+    = @book.price
+  %li.list-group-item
+    %b Amazon link:
+    = @book.amazon_link
 
-= link_to 'Edit', edit_book_path(@book)
-\|
-= link_to 'Back', books_path
+.btn-group-lg
+  = link_to 'Edit', edit_book_path(@book), class: "btn btn-default"
+  = link_to 'Back', books_path, class: "btn btn-default"
