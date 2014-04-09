@@ -21,3 +21,11 @@ How to install rails?
 * cd EBusinessDemo
 * bundle install
 * rails s
+
+====
+
+Hadoop Environment
+
+How to install Java?
+* Ubuntu: http://community.linuxmint.com/tutorial/view/1414
+* Fedora: http://www.if-not-true-then-false.com/2010/install-sun-oracle-java-jdk-jre-7-on-fedora-centos-red-hat-rhel/
